@@ -17,12 +17,12 @@ class GetPrograms:
             programs_list.append(program["dbn"])
         return programs_list
 
-programs = GetPrograms().get_programs()
-print(programs)
-# programs = GetPrograms()
-# programs_schools = programs.program_school()
+# programs = GetPrograms().get_programs()
+# print(programs)
+programs = GetPrograms()
+programs_schools = programs.program_school()
 
-# for school in set(programs_schools):
-#     print(school)
+for school in set(programs_schools):
+    print(school)
 
   
